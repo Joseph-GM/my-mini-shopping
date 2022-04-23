@@ -1,0 +1,95 @@
+:root {
+    /* Font Size */
+    --font-large: 18px;
+    --font-medium: 14px;
+
+    /* Image Size */
+    --list-size: 70px;
+    --item-size: 50px;
+    --img-size: 60px;
+}
+
+body {
+    background-color: #3f454d;
+}
+
+ul {
+    list-style: none;
+}
+.topBox {
+    margin-top: 50px;
+    position: sticky;
+    top: 0;
+    background-color: #3f454d;
+}
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.index {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.index li {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index img {
+    width: var(--item-size);
+    height: var(--item-size);
+}
+
+/* .index .box {
+    padding: 15px;
+    text-align: center;
+} */
+.index a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: black;
+}
+.index .blue {
+    background-color: #3989c4;
+    padding: 15px;
+}
+
+.index .yellow {
+    background-color: #ffd7da;
+    padding: 15px;
+}
+
+.index .pink {
+    background-color: #fbbf23;
+    padding: 15px;
+}
+.list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list li {
+    background-color: white;
+    margin-top: 10px;
+    padding: 5px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    overflow-y: scroll;
+}
+.list img {
+    width: var(--img-size);
+    height: var(--img-size);
+    margin-left: 10px;
+}
+
+.list span {
+    margin-left: 10px;
+    font-size: var(--font-large);
+}
